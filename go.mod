@@ -1,4 +1,4 @@
-module github.com/bootdotdev/projects/apikey
+module github.com/bootdotdev/projects/createfeed
 
 go 1.20
 
