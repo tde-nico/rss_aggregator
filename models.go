@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/bootdotdev/projects/createfeed/internal/database"
+	"github.com/bootdotdev/projects/getfeeds/internal/database"
 	"github.com/google/uuid"
 )
 
@@ -43,4 +43,12 @@ func databaseFeedToFeed(feed database.Feed) Feed {
 		Url:       feed.Url,
 		UserID:    feed.UserID,
 	}
+}
+
+func databaseFeedsToFeeds(feeds []database.Feed) []Feed {
+	result := make([]Feed, len(feeds))
+	for i, feed := range feeds {
+		result[i] = databaseFeedToFeed(feed)
+	}
+	return result
 }

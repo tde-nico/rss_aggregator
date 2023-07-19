@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bootdotdev/projects/createfeed/internal/database"
+	"github.com/bootdotdev/projects/getfeeds/internal/database"
 	"github.com/google/uuid"
 )
 

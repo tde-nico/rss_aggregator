@@ -1,4 +1,4 @@
-module github.com/bootdotdev/projects/createfeed
+module github.com/bootdotdev/projects/getfeeds
 
 go 1.20
 

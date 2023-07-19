@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/bootdotdev/projects/createfeed/internal/auth"
-	"github.com/bootdotdev/projects/createfeed/internal/database"
+	"github.com/bootdotdev/projects/getfeeds/internal/auth"
+	"github.com/bootdotdev/projects/getfeeds/internal/database"
 )
 
 type authedHandler func(http.ResponseWriter, *http.Request, database.User)
