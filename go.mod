@@ -1,4 +1,4 @@
-module github.com/bootdotdev/projects/boilerplate
+module github.com/bootdotdev/projects/apikey
 
 go 1.20
 

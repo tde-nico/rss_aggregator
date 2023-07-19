@@ -10,7 +10,7 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/joho/godotenv"
 
-	"github.com/bootdotdev/projects/createusers/internal/database"
+	"github.com/bootdotdev/projects/apikey/internal/database"
 
 	_ "github.com/lib/pq"
 )
@@ -56,6 +56,7 @@ func main() {
 	v1Router := chi.NewRouter()
 
 	v1Router.Post("/users", apiCfg.handlerUsersCreate)
+	v1Router.Get("/users", apiCfg.handlerUsersGet)
 
 	v1Router.Get("/healthz", handlerReadiness)
 	v1Router.Get("/err", handlerErr)
